@@ -10,8 +10,8 @@ class Rust < Formula
 
     resource "cargo" do
       url "https://github.com/rust-lang/cargo.git",
-          tag:      "0.50.0",
-          revision: "d00d64df9f803bf5bba8714ca498d8f9159d07f6"
+          tag: "0.50.1",
+          revision: "d61c808dda8029721042618f22e8e15d01328af4"
     end
   end
 
@@ -136,3 +136,4 @@ class Rust < Formula
                  (testpath/"hello_world").cd { `#{bin}/cargo run`.split("\n").last }
   end
 end
+
